@@ -6,15 +6,24 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
+    "dev": "tinacms dev -c \"astro dev\"",
+    "build": "tinacms build && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.3.3"
+    "@astrojs/node": "^11.1.6",
+    "@tinacms/astro": "^0.7.0",
+    "astro": "^7.3.3",
+    "tinacms": "^3.14.0"
   },
   "allowScripts": {
     "esbuild": true
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^3.0.0",
+    "@types/node": "^26.6.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
